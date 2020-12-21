@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="darkWhite">#F4F2F2</color>
+
+
+    <!-- Color for Button -->
+    <color name="gradient_start">#4c84ff</color>
+    <color name="gradient_end">#18a3fe</color>
+
+    <!-- color for tb and text -->
+    <color name="tab_indicatore">#c0c0c0</color>
+    <color name="intro_title">#000000</color>
+    <color name="intro_desc">#656565</color>
+</resources>

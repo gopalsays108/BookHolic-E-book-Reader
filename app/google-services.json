@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "404065399350",
+    "firebase_url": "https://online-reader-38509.firebaseio.com",
+    "project_id": "online-reader-38509",
+    "storage_bucket": "online-reader-38509.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404065399350:android:16c6de1e5dc1e2f4035e97",
+        "android_client_info": {
+          "package_name": "com.gopal.ebookapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "404065399350-sqlfbavm71kpbeps2bo26t2b1fc880bq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMtXsUd-OfzSTC9gb78OS35SNlYjMUyTw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "404065399350-sqlfbavm71kpbeps2bo26t2b1fc880bq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/read">
+        <menu>
+            <item
+                android:id="@+id/navMenuBooks"
+                android:icon="@drawable/books"
+                android:title="@string/books" />
+
+            <item
+                android:id="@+id/likedBookActivity"
+                android:icon="@drawable/likednav"
+                android:title="@string/liked_books" />
+
+            <item
+                android:id="@+id/requestBook"
+                android:icon="@drawable/requestnav"
+                android:title="@string/notification" />
+
+        </menu>
+    </item>
+
+    <item android:title="@string/communication">
+        <menu>
+            <item
+                android:id="@+id/uploadBooksNav"
+                android:icon="@drawable/upload"
+                android:title="@string/upload_books" />
+
+            <item
+                android:id="@+id/shareApp"
+                android:icon="@drawable/share"
+                android:title="@string/share_app" />
+
+            <item
+                android:id="@+id/rateApp"
+                android:icon="@drawable/ic_rating"
+                android:title="@string/rate_now" />
+
+            <item
+                android:id="@+id/logOut"
+                android:icon="@drawable/signout"
+                android:title="@string/log_out" />
+
+
+        </menu>
+    </item>
+
+</menu>

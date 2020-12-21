@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="#F4F3F6"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/request_a_book"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/bookNameRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="@string/book_name"
+        android:backgroundTint="#ECE7B1"
+        android:elevation="1dp"
+        android:ems="10"
+        android:hint="@string/book_name"
+        android:inputType="textCapWords"
+        android:lines="1"
+        android:maxLines="1"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
+
+    <EditText
+        android:id="@+id/authorNameRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="@string/author_name"
+        android:backgroundTint="#ECE7B1"
+        android:elevation="1dp"
+        android:ems="10"
+        android:hint="@string/author_name"
+        android:inputType="textCapWords"
+        android:lines="1"
+        android:maxLines="1"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
+
+
+    <Button
+        android:id="@+id/requestBookBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#0BB8EC"
+        android:text="@string/request"
+        android:textAllCaps="false"
+        android:textSize="15sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarRequestDialogue"
+        android:layout_width="35sp"
+        android:visibility="invisible"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="18dp" />
+
+
+</LinearLayout>

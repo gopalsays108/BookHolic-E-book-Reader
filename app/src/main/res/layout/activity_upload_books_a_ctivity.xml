@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DE8AEADE"
+    android:fillViewport="true"
+    tools:context="com.gopal.UploadBooksActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/pdfUploadImageCover"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="60dp"
+            android:contentDescription="@string/bookcoverimage"
+            android:src="@drawable/trailphoto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/pdfName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints="@string/book_name"
+            android:background="@drawable/drawable_background"
+            android:backgroundTint="@color/colorAccent"
+            android:ems="10"
+            android:hint="@string/book_name"
+            android:inputType="textPersonName|textCapWords"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/noOfPages" />
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/drawable_background"
+            android:backgroundTint="#04A192"
+            android:text="@string/upload_books"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pdfBookCategory" />
+
+        <EditText
+            android:id="@+id/pdfAuthorName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints="@string/author_name"
+            android:background="@drawable/drawable_background"
+            android:backgroundTint="@color/colorAccent"
+            android:ems="10"
+            android:hint="@string/author_name"
+            android:inputType="textPersonName|textCapWords"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="@+id/pdfName"
+            app:layout_constraintStart_toStartOf="@+id/pdfName"
+            app:layout_constraintTop_toBottomOf="@+id/pdfName" />
+
+        <EditText
+            android:id="@+id/pdfBookDescription"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints="@string/book_description"
+            android:background="@drawable/drawable_background"
+            android:backgroundTint="@color/colorAccent"
+            android:ems="10"
+            android:hint="@string/book_description"
+            android:inputType="textMultiLine|textCapSentences"
+            android:maxHeight="110dp"
+            android:overScrollMode="ifContentScrolls"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="@+id/pdfAuthorName"
+            app:layout_constraintStart_toStartOf="@+id/pdfAuthorName"
+            app:layout_constraintTop_toBottomOf="@+id/pdfAuthorName" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:src="@drawable/down"
+            android:contentDescription="@string/downbtn"
+            app:layout_constraintBottom_toTopOf="@+id/btnUpload"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.891"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/spinner"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/pdfBookCategory"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints="@string/tags"
+            android:background="@drawable/drawable_background"
+            android:backgroundTint="@color/colorAccent"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/tags"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="@+id/pdfBookDescription"
+            app:layout_constraintStart_toStartOf="@+id/pdfBookDescription"
+            app:layout_constraintTop_toBottomOf="@+id/pdfBookDescription" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:elevation="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnUpload"
+            app:layout_constraintEnd_toEndOf="@+id/pdfBookCategory"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pdfBookDescription"
+            app:layout_constraintVertical_bias="0.188"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@string/click_above_to_upload_cover_image_optional"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:alpha="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pdfUploadImageCover" />
+
+        <TextView
+            android:id="@+id/noOfPages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/no_of_pages"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:indeterminateTint="#089789"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/btnUpload"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pdfBookCategory" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

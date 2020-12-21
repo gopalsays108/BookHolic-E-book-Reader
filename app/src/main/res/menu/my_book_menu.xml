@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/addToLibraryMenu"
+        android:title="@string/add_to_library" />
+    <item
+        android:id="@+id/aboutBookMenu"
+        android:title="@string/about_book" />
+    <item
+        android:id="@+id/deleteBookMenu"
+        android:title="@string/delete" />
+</menu>

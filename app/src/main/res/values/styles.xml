@@ -1,0 +1,39 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#F1F1F1</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- splash theme created to put splash background explicitly -->
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here, window background added for splash -->
+        <item name="colorPrimary">#363636</item>
+        <item name="colorPrimaryDark">#363636</item>
+        <item name="colorAccent">#363636</item>
+        <item name="android:navigationBarColor">#363636</item>
+<!--        <item name="android:windowBackground">@drawable/splash_activity_background</item>-->
+    </style>
+
+    <!-- splash theme created to put splash background explicitly -->
+    <style name="InfoTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here, window background added for splash -->
+        <item name="colorPrimary">#FFFFFF</item>
+        <item name="colorPrimaryDark">#FFFFFF</item>
+        <item name="colorAccent">#FFFFFF</item>
+        <item name="android:navigationBarColor">#FFFFFF</item>
+        <!--        <item name="android:windowBackground">@drawable/splash_activity_background</item>-->
+    </style>
+
+</resources>
